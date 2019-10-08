@@ -1,5 +1,5 @@
 {
-  "name": "humescores",
+  "name": "softuni",
   "version": "0.0.1",
   "description": "Accessible WordPress theme utilizing flex layouts and modern development practices.",
   "main": "index.php",
@@ -8,14 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mor10/humescores"
+    "url": "git+https://github.com/antoniaat/Softuniada-2020"
   },
-  "author": "Morten Rand-Hendriksen",
-  "license": "GPL-3.0",
+  "author": "Antonia Atanasova",
   "bugs": {
-    "url": "https://github.com/mor10/humescores/issues"
+    "url": "https://github.com/antoniaat/Softuniada-2020/issues"
   },
-  "homepage": "https://github.com/mor10/humescores#readme",
+  "homepage": "https://github.com/antoniaat/Softuniada-2020#readme",
   "devDependencies": {
     "autoprefixer": "^6.5.2",
     "browser-sync": "^2.17.6",
