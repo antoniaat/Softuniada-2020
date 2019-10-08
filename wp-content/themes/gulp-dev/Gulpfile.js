@@ -1,4 +1,4 @@
-var themename = 'humescores';
+var themename = 'softuni';
 
 var gulp = require('gulp'),
 	// Prepare and optimize code etc
@@ -56,9 +56,10 @@ gulp.task('javascript', function() {
 
 // Watch everything
 gulp.task('watch', function() {
-	browserSync.init({ 
+	browserSync.init({
+		watch: true,
 		open: 'external',
-		proxy: 'humescores.dev',
+		proxy: "http://127.0.0.1/softuniada/",
 		port: 8080
 	});
 	gulp.watch([root + '**/*.css', root + '**/*.scss' ], ['css']);
