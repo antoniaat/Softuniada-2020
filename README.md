@@ -1,0 +1,2 @@
+# SoftUni-Theme
+ WordPress Theme
