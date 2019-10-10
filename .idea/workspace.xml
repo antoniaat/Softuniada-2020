@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2498d9b8-c7d6-488c-b768-287153871725" name="Default Changelist" comment="" />
+    <list default="true" id="2498d9b8-c7d6-488c-b768-287153871725" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/softuni/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/softuni/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/softuni/sass/typography/_headings.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/softuni/sass/typography/_headings.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/softuni/sass/variables-site/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/softuni/sass/variables-site/_typography.scss" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,7 +18,11 @@
       <executable />
     </execution>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1RqKBEFLAdcXmpIYMPUxdcNnes7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -44,10 +53,22 @@
       <updated>1570389048751</updated>
       <workItem from="1570389049966" duration="378000" />
       <workItem from="1570389430188" duration="2719000" />
+      <workItem from="1570717562836" duration="486000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

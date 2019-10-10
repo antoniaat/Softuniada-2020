@@ -120,6 +120,9 @@ add_action( 'widgets_init', 'softuni_widgets_init' );
  * Enqueue scripts and styles.
  */
 function softuni_scripts() {
+    // Enqueue Google Fonts: Lato and Montserrat
+    wp_enqueue_style('softuni_fonts', "https://fonts.googleapis.com/css?family=Lato:400,700,900|Montserrat:200,200i,300,300i,400,400i,500,500i,600,700,800,900&display=swap&subset=cyrillic,cyrillic-ext,latin-ext");
+
 	wp_enqueue_style( 'softuni-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'softuni-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
