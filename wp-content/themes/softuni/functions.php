@@ -87,7 +87,8 @@ add_action('after_setup_theme', 'softuni_setup');
 /**
  * Register custom fonts.
  */
-function softuni_fonts_url() {
+function softuni_fonts_url()
+{
     $fonts_url = '';
 
     /*
@@ -95,6 +96,7 @@ function softuni_fonts_url() {
      * supported by Lato and Montserrat, translate this to 'off'. Do not translate
      * into your own language.
      */
+
     $lato = _x('on', 'Lato font: on or off', 'softuni');
     $montserrat = _x('on', 'Montserrat font: on or off', 'softuni');
 
@@ -108,7 +110,7 @@ function softuni_fonts_url() {
         $font_families[] = 'Montserrat';
     }
 
-    if ( in_array('on', array($lato, $montserrat))) {
+    if (in_array('on', array($lato, $montserrat))) {
         $query_args = array(
             'family' => urlencode(implode('|', $font_families)),
             'subset' => urlencode('latin,latin-ext'),
@@ -119,6 +121,19 @@ function softuni_fonts_url() {
 
     return esc_url_raw($fonts_url);
 }
+
+function softuni_resource_hints( $urls, $relation_type ) {
+    if ( wp_style_is( 'softuni-fonts', 'queue' ) && 'preconnect' === $relation_type ) {
+        $urls[] = array(
+            'href' => 'https://fonts.gstatic.com',
+            'crossorigin',
+        );
+    }
+
+    return $urls;
+}
+add_filter( 'wp_resource_hints', 'softuni_resource_hints', 10, 2 );
+
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -165,7 +180,7 @@ function softuni_scripts()
     wp_enqueue_style('softuni_fonts', softuni_fonts_url(), array(), null);
 
     // Enqueue Google Fonts: Lato and Montserrat
-//    wp_enqueue_style('softuni_fonts', "https://fonts.googleapis.com/css?family=Lato:400,700,900|Montserrat:200,200i,300,300i,400,400i,500,500i,600,700,800,900&display=swap&subset=cyrillic,cyrillic-ext,latin-ext");
+    wp_enqueue_style('softuni_fonts', "https://fonts.googleapis.com/css?family=Lato:400,700,900|Montserrat:200,200i,300,300i,400,400i,500,500i,600,700,800,900&display=swap&subset=cyrillic,cyrillic-ext,latin-ext");
 
     wp_enqueue_style('softuni-style', get_stylesheet_uri());
 
