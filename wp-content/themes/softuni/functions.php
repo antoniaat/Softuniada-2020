@@ -122,8 +122,9 @@ function softuni_fonts_url()
     return esc_url_raw($fonts_url);
 }
 
-function softuni_resource_hints( $urls, $relation_type ) {
-    if ( wp_style_is( 'softuni-fonts', 'queue' ) && 'preconnect' === $relation_type ) {
+function softuni_resource_hints($urls, $relation_type)
+{
+    if (wp_style_is('softuni-fonts', 'queue') && 'preconnect' === $relation_type) {
         $urls[] = array(
             'href' => 'https://fonts.gstatic.com',
             'crossorigin',
@@ -132,7 +133,8 @@ function softuni_resource_hints( $urls, $relation_type ) {
 
     return $urls;
 }
-add_filter( 'wp_resource_hints', 'softuni_resource_hints', 10, 2 );
+
+add_filter('wp_resource_hints', 'softuni_resource_hints', 10, 2);
 
 
 /**

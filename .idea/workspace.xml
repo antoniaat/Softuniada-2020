@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2498d9b8-c7d6-488c-b768-287153871725" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/gulp-dev/Gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/gulp-dev/Gulpfile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/softuni/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/softuni/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/softuni/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/softuni/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/softuni/page.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/softuni/page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/softuni/sass/_normalize.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/softuni/sass/_normalize.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/softuni/sass/maps/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/softuni/sass/maps/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/softuni/sass/mixins/_mixins-master.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/softuni/sass/mixins/_mixins-master.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/softuni/sass/typography/_headings.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/softuni/sass/typography/_headings.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/softuni/sass/typography/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/softuni/sass/typography/_typography.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,10 +30,11 @@
   <component name="ProjectId" id="1RqKBEFLAdcXmpIYMPUxdcNnes7" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="C:/Ruby26-x64/bin/scss.bat" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">

@@ -24,42 +24,41 @@ var gulp = require('gulp'),
 // CSS via Sass and Autoprefixer
 gulp.task('css', function() {
 	return gulp.src(scss + '{style.scss,rtl.scss}')
-	.pipe(sourcemaps.init())
-	.pipe(sass({
-		outputStyle: 'expanded', 
-		indentType: 'tab',
-		indentWidth: '1'
-	}).on('error', sass.logError))
-	.pipe(postcss([
-		autoprefixer('last 2 versions', '> 1%')
-	]))
-	.pipe(sourcemaps.write(scss + 'maps'))
-	.pipe(gulp.dest(root));
+		.pipe(sourcemaps.init())
+		.pipe(sass({
+			outputStyle: 'expanded',
+			indentType: 'tab',
+			indentWidth: '1'
+		}).on('error', sass.logError))
+		.pipe(postcss([
+			autoprefixer('last 2 versions', '> 1%')
+		]))
+		.pipe(sourcemaps.write(scss + 'maps'))
+		.pipe(gulp.dest(root));
 });
 
 // Optimize images through gulp-image
 gulp.task('images', function() {
 	return gulp.src(img + 'RAW/**/*.{jpg,JPG,png}')
-	.pipe(newer(img))
-	.pipe(image())
-	.pipe(gulp.dest(img));
+		.pipe(newer(img))
+		.pipe(image())
+		.pipe(gulp.dest(img));
 });
 
 // JavaScript
 gulp.task('javascript', function() {
 	return gulp.src([js + '*.js'])
-	.pipe(jshint())
-	.pipe(jshint.reporter('default'))
-	.pipe(gulp.dest(js));
+		.pipe(jshint())
+		.pipe(jshint.reporter('default'))
+		.pipe(gulp.dest(js));
 });
 
 
 // Watch everything
 gulp.task('watch', function() {
 	browserSync.init({
-		watch: true,
 		open: 'external',
-		proxy: "http://127.0.0.1/softuniada/",
+		proxy: 'softuni.dev',
 		port: 8080
 	});
 	gulp.watch([root + '**/*.css', root + '**/*.scss' ], ['css']);
