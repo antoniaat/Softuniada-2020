@@ -82,3 +82,4 @@ fabric.properties
 *.xml
 *.xml
 .idea/workspace.xml
+*.iml
