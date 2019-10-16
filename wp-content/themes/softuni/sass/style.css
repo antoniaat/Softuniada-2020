@@ -65,11 +65,7 @@ html {
  */
 body {
   margin: 0;
-}
-
-body {
-  background: red !important;
-  color: red !important;
+  background-color: orange !important;
 }
 
 /**

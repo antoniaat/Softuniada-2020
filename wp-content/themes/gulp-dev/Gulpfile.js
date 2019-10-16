@@ -20,7 +20,6 @@ var gulp = require('gulp'),
 	img = root + 'images/',
 	languages = root + 'languages/';
 
-
 // CSS via Sass and Autoprefixer
 gulp.task('css', function() {
 	return gulp.src(scss + '{style.scss,rtl.scss}')
@@ -57,16 +56,14 @@ gulp.task('javascript', function() {
 // Watch everything
 gulp.task('watch', function() {
 	browserSync.init({
-		open: 'external',
-		proxy: 'softuni.dev',
-		port: 8080
+		proxy: 'http://localhost/softuniada/',
+		port: 3000,
 	});
 	gulp.watch([root + '**/*.css', root + '**/*.scss' ], ['css']);
 	gulp.watch(js + '**/*.js', ['javascript']);
 	gulp.watch(img + 'RAW/**/*.{jpg,JPG,png}', ['images']);
 	gulp.watch(root + '**/*').on('change', browserSync.reload);
 });
-
 
 // Default task (runs at initiation: gulp --verbose)
 gulp.task('default', ['watch']);
