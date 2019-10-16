@@ -1,0 +1,125 @@
+# Copyright (C) 2019 Ultimate Blocks
+# This file is distributed under the same license as the Ultimate Blocks - Custom Gutenberg Blocks plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Ultimate Blocks - Custom Gutenberg Blocks 1.1.4\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/ultimate-blocks\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2019-03-23T00:40:12+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.1.0\n"
+"X-Domain: ultimate-blocks\n"
+
+#. Plugin Name of the plugin
+msgid "Ultimate Blocks - Custom Gutenberg Blocks"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://ultimateblocks.com"
+msgstr ""
+
+#. Description of the plugin
+msgid "Custom Blocks for Bloggers and Marketers. Create Better Content With Gutenberg."
+msgstr ""
+
+#. Author of the plugin
+#: includes/class-ultimate-blocks-category.php:59
+msgid "Ultimate Blocks"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://ultimateblocks.com/"
+msgstr ""
+
+#: admin/templates/menus/main-menu.php:22
+msgid "All"
+msgstr ""
+
+#: admin/templates/menus/main-menu.php:23
+msgid "Enabled"
+msgstr ""
+
+#: admin/templates/menus/main-menu.php:24
+msgid "Disabled"
+msgstr ""
+
+#: admin/templates/menus/main-menu.php:36
+msgid "%s"
+msgstr ""
+
+#: admin/templates/help/help-page.php:20
+msgid "Welcome to Ultimate Blocks!"
+msgstr ""
+
+#: admin/templates/help/help-page.php:21
+msgid "Essential Collection of Blocks for Gutenberg Editor"
+msgstr ""
+
+#: admin/templates/help/help-page.php:24
+msgid "Ultimate Blocks comes with the essential Gutenberg blocks you need to create better content with Gutenberg."
+msgstr ""
+
+#: admin/templates/help/help-page.php:25
+msgid "17 awesome blocks."
+msgstr ""
+
+#: admin/templates/help/help-page.php:25
+msgid "More in the making..."
+msgstr ""
+
+#: admin/templates/help/help-page.php:29
+msgid "Manage the Blocks"
+msgstr ""
+
+#: src/blocks/countdown/block.php:14
+msgid "weeks"
+msgstr ""
+
+#: src/blocks/countdown/block.php:14
+msgid "days"
+msgstr ""
+
+#: src/blocks/countdown/block.php:14
+msgid "hours"
+msgstr ""
+
+#: src/blocks/countdown/block.php:14
+msgid "minutes"
+msgstr ""
+
+#: src/blocks/countdown/block.php:14
+msgid "seconds"
+msgstr ""
+
+#: src/blocks/countdown/block.php:39
+#: src/blocks/countdown/block.php:59
+msgid "Weeks"
+msgstr ""
+
+#: src/blocks/countdown/block.php:40
+#: src/blocks/countdown/block.php:59
+msgid "Days"
+msgstr ""
+
+#: src/blocks/countdown/block.php:41
+#: src/blocks/countdown/block.php:59
+msgid "Hours"
+msgstr ""
+
+#: src/blocks/countdown/block.php:42
+#: src/blocks/countdown/block.php:60
+msgid "Minutes"
+msgstr ""
+
+#: src/blocks/countdown/block.php:43
+#: src/blocks/countdown/block.php:60
+msgid "Seconds"
+msgstr ""
+
+#: src/blocks/click-to-tweet/block.php:48
+msgid "Click to Tweet"
+msgstr ""

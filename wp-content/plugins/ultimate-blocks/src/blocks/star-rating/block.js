@@ -1,0 +1,190 @@
+const { __ } = wp.i18n;
+
+const { registerBlockType, createBlock } = wp.blocks;
+
+const { withState, compose } = wp.compose;
+const { withDispatch, withSelect } = wp.data;
+
+import './style.scss';
+
+import { EmptyStar, BlockIcon, FullStar } from './icons';
+import {
+	oldAttributes,
+	version_1_1_2,
+	version_1_1_5,
+	version_2_0_0,
+	updateFrom
+} from './oldVersions';
+import { blockControls, inspectorControls, editorDisplay } from './components';
+import { mergeRichTextArray, upgradeButtonLabel } from '../../common';
+
+const attributes = {
+	blockID: {
+		type: 'string',
+		default: ''
+	},
+	starCount: {
+		type: 'number',
+		default: 5
+	},
+	starSize: {
+		type: 'number',
+		default: 20
+	},
+	starColor: {
+		type: 'string',
+		default: '#ffff00'
+	},
+	selectedStars: {
+		type: 'number',
+		default: 0
+	},
+	reviewText: {
+		type: 'string',
+		default: ''
+	},
+	reviewTextAlign: {
+		type: 'string',
+		default: 'text'
+	},
+	starAlign: {
+		type: 'string',
+		default: 'left'
+	}
+};
+
+registerBlockType('ub/star-rating', {
+	title: __('Star Rating'),
+	icon: BlockIcon,
+	category: 'ultimateblocks',
+
+	attributes: oldAttributes,
+	supports: {
+		inserter: false
+	},
+
+	edit: compose([
+		withSelect((select, ownProps) => {
+			const { getBlock } = select('core/editor');
+
+			const { clientId } = ownProps;
+
+			return {
+				block: getBlock(clientId)
+			};
+		}),
+		withDispatch(dispatch => {
+			const { replaceBlock } = dispatch('core/editor');
+			return { replaceBlock };
+		}),
+		withState({ highlightedStars: 0 })
+	])(function(props) {
+		const { isSelected, block, replaceBlock, attributes } = props;
+
+		return [
+			isSelected && blockControls(props),
+			isSelected && inspectorControls(props),
+			<div className="ub-star-rating">
+				<button
+					onClick={() => {
+						const { reviewText, ...otherAttributes } = attributes;
+						replaceBlock(
+							block.clientId,
+							createBlock(
+								'ub/star-rating-block',
+								Object.assign(otherAttributes, {
+									reviewText: mergeRichTextArray(reviewText)
+								})
+							)
+						);
+					}}
+				>
+					{upgradeButtonLabel}
+				</button>
+				{editorDisplay(props)}
+			</div>
+		];
+	}),
+
+	save(props) {
+		const {
+			starCount,
+			starSize,
+			starColor,
+			selectedStars,
+			reviewText,
+			reviewTextAlign,
+			starAlign
+		} = props.attributes;
+		return (
+			<div className="ub-star-rating">
+				<div
+					className="ub-star-outer-container"
+					style={{
+						justifyContent:
+							starAlign === 'center'
+								? 'center'
+								: `flex-${
+										starAlign === 'left' ? 'start' : 'end'
+								  }`
+					}}
+				>
+					<div className="ub-star-inner-container">
+						{[...Array(starCount)].map((e, i) => (
+							<div key={i}>
+								{i < selectedStars ? (
+									<FullStar
+										size={starSize}
+										fillColor={starColor}
+									/>
+								) : (
+									<EmptyStar size={starSize} />
+								)}
+							</div>
+						))}
+					</div>
+				</div>
+				<div
+					className="ub-review-text"
+					style={{ textAlign: reviewTextAlign }}
+				>
+					{reviewText}
+				</div>
+			</div>
+		);
+	},
+
+	deprecated: [
+		updateFrom(version_1_1_2),
+		updateFrom(version_1_1_5),
+		updateFrom(version_2_0_0)
+	]
+});
+
+registerBlockType('ub/star-rating-block', {
+	title: __('Star Rating'),
+	icon: BlockIcon,
+	category: 'ultimateblocks',
+
+	attributes,
+
+	edit: compose([
+		withState({ highlightedStars: 0 }),
+		withSelect((select, ownProps) => ({
+			block: select('core/editor').getBlock(ownProps.clientId)
+		}))
+	])(function(props) {
+		const { isSelected, block } = props;
+
+		if (props.attributes.blockID !== block.clientId) {
+			props.setAttributes({ blockID: block.clientId });
+		}
+
+		return [
+			isSelected && blockControls(props),
+			isSelected && inspectorControls(props),
+			<div className="ub-star-rating">{editorDisplay(props)}</div>
+		];
+	}),
+	save: () => null
+});

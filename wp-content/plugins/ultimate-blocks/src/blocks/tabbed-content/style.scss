@@ -1,0 +1,66 @@
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+
+.wp-block-ub-tabbed-content {
+	margin: 30px 0;
+}
+
+.wp-block-ub-tabbed-content-holder {
+	.blocks-rich-text__tinymce.mce-content-body {
+		font-size: 14px;
+	}
+}
+
+.wp-block-ub-tabbed-content-tab-holder {
+	position: relative;
+}
+
+.wp-block-ub-tabbed-content-scroll-button-container {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	position: absolute;
+	pointer-events: none;
+	> button {
+		position: absolute;
+		pointer-events: auto;
+		border-radius: 50%;
+		top: -10px;
+		padding: 0;
+		margin: 0;
+		height: 25px;
+		width: 25px;
+	}
+}
+.wp-block-ub-tabbed-content-scroll-button-right {
+	right: 0;
+}
+
+.wp-block-ub-tabbed-content-tabs-title {
+	display: flex;
+	overflow-x: hidden;
+}
+
+.wp-block-ub-tabbed-content-tab-title-wrap {
+	border: 1px solid lightgrey;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	padding: 10px 15px;
+	border-bottom: 0;
+	margin-right: 5px;
+	display: flex;
+	align-items: center;
+	position: relative;
+	cursor: pointer;
+	&.active {
+		color: white;
+	}
+}
+
+.wp-block-ub-tabbed-content-tabs-content {
+	border: 1px solid lightgrey;
+	padding: 25px;
+}

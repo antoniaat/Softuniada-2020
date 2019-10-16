@@ -1,0 +1,17 @@
+@import '../../common';
+
+div[data-block] > .ub_image_slider {
+	display: block;
+	.ub_image_slider_add_images {
+		margin: 0 auto;
+	}
+}
+
+.ub_image_slider_url_input {
+	width: 300px;
+	margin: auto;
+}
+
+.ub_image_slider_extra {
+	height: 100%;
+}
