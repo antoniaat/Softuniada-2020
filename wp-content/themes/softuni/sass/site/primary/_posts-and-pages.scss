@@ -7,7 +7,16 @@
 	margin: 0 0 1.5em;
 }
 
-.updated:not(.published) {
+.site-content {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.header-video * {
+	border-radius: 12px;
+}
+
+.site-content .updated:not(.published) {
 	display: none;
 }
 
