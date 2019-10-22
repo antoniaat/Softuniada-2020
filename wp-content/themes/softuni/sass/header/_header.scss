@@ -1,5 +1,4 @@
 #masthead.site-header, #primary-menu {
-  padding: 0 2em;
   display: inline-flex;
   width: 100%;
   text-align: right;
@@ -30,7 +29,6 @@
   display: inline;
   text-align: right;
 }
-
 
 .site-branding, .site-navigation {
   display: inline-block;
@@ -69,6 +67,10 @@
 #site-navigation {
   display: inline;
   float: right;
+}
+
+.kt-row-layout-inner {
+  padding: 0 3em;
 }
 
 @media screen and (max-width: 900px) {

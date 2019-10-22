@@ -60,8 +60,14 @@
   .ub-countdown div.timer-container div:nth-child(2) {
     font-size: 15px;
   }
+}
 
-  .entry-header {
+.rounded-img img {
+  border-radius: 5% !important;
+}
 
-  }
+.custom-link-box a {
+  color: orange !important;
+  text-decoration: none;
+  font-weight: bold;
 }

@@ -576,7 +576,6 @@ table {
 }
 
 #masthead.site-header, #primary-menu {
-	padding: 0 2em;
 	display: -ms-inline-flexbox;
 	display: inline-flex;
 	width: 100%;
@@ -648,6 +647,10 @@ table {
 	float: right;
 }
 
+.kt-row-layout-inner {
+	padding: 0 3em;
+}
+
 @media screen and (max-width: 900px) {
 	.site-branding, .site-navigation {
 		display: none;
@@ -713,6 +716,16 @@ table {
 	.ub-countdown div.timer-container div:nth-child(2) {
 		font-size: 15px;
 	}
+}
+
+.rounded-img img {
+	border-radius: 5% !important;
+}
+
+.custom-link-box a {
+	color: orange !important;
+	text-decoration: none;
+	font-weight: bold;
 }
 
 /*--------------------------------------------------------------
