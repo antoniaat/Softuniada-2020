@@ -632,7 +632,7 @@ table {
 	width: 100%;
 }
 
-.ub-countdown .ub_countdown_day, .ub-countdown .ub_countdown_hour, .ub-countdown .ub_countdown_minute, .ub-countdown .ub_countdown_second {
+.ub-countdown .ub_countdown_week, .ub-countdown .ub_countdown_day, .ub-countdown .ub_countdown_hour, .ub-countdown .ub_countdown_minute, .ub-countdown .ub_countdown_second {
 	display: block;
 	background: #cecbcb;
 	border-radius: 12px;
