@@ -435,6 +435,29 @@ h6 {
 	font-size: 1.6em;
 }
 
+@media screen and (max-width: 900px) {
+	h1 {
+		font-size: 2em;
+		text-align: center;
+	}
+	h2 {
+		font-size: 1.6em;
+		text-align: center;
+	}
+	h3 {
+		font-size: 1.2em;
+	}
+	h4 {
+		font-size: 1em;
+	}
+	h5 {
+		font-size: .8em;
+	}
+	h6 {
+		font-size: .6em;
+	}
+}
+
 p {
 	margin-bottom: 1.5em;
 }
@@ -672,6 +695,24 @@ table {
 
 .ytp-large-play-button.ytp-button {
 	background: orange;
+}
+
+@media screen and (max-width: 900px) {
+	.ub-countdown {
+		text-align: center;
+	}
+	.ub-countdown div {
+		width: 82px;
+		margin-right: .4em;
+	}
+	.ub-countdown .ub_countdown_week, .ub-countdown .ub_countdown_day, .ub-countdown .ub_countdown_hour, .ub-countdown .ub_countdown_minute, .ub-countdown .ub_countdown_second {
+		padding: 6px;
+		width: 100%;
+		font-size: 28px;
+	}
+	.ub-countdown div.timer-container div:nth-child(2) {
+		font-size: 15px;
+	}
 }
 
 /*--------------------------------------------------------------
