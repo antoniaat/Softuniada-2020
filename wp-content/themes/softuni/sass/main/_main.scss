@@ -41,27 +41,6 @@
   background: orange;
 }
 
-@media screen and (max-width: 900px) {
-  .ub-countdown {
-    text-align: center;
-  }
-
-  .ub-countdown div {
-    width: 82px;
-    margin-right: .4em;
-  }
-
-  .ub-countdown .ub_countdown_week, .ub-countdown .ub_countdown_day, .ub-countdown .ub_countdown_hour, .ub-countdown .ub_countdown_minute, .ub-countdown .ub_countdown_second {
-    padding: 6px;
-    width: 100%;
-    font-size: 28px;
-  }
-
-  .ub-countdown div.timer-container div:nth-child(2) {
-    font-size: 15px;
-  }
-}
-
 .rounded-img img {
   border-radius: 5% !important;
 }
@@ -147,6 +126,11 @@
   }
 }
 
+.slick-prev, .slick-arrow {
+  background-color: #78ACC6 !important;
+  border: 1px solid #78ACC6 !important;
+}
+
 .msacwl-gallery-slider .slick-dots li.slick-active button, .msacwl-gallery-carousel .slick-dots li.slick-active button {
   background-color: #78ACC6 !important;
   border: 1px solid #78ACC6 !important;
@@ -173,4 +157,25 @@
   }
 
   margin: 4px !important;
+}
+
+@media screen and (max-width: 900px) {
+  .ub-countdown {
+    text-align: center;
+  }
+
+  .ub-countdown div {
+    width: 82px;
+    margin-right: .4em;
+  }
+
+  .ub-countdown .ub_countdown_week, .ub-countdown .ub_countdown_day, .ub-countdown .ub_countdown_hour, .ub-countdown .ub_countdown_minute, .ub-countdown .ub_countdown_second {
+    padding: 6px;
+    width: 100%;
+    font-size: 28px;
+  }
+
+  .ub-countdown div.timer-container div:nth-child(2) {
+    font-size: 15px;
+  }
 }
