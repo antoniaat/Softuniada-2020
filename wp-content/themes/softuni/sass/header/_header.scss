@@ -1,31 +1,53 @@
 #masthead.site-header, #primary-menu {
-  padding: 0 4em;
+  padding: 0 2em;
   display: inline-flex;
   width: 100%;
   text-align: right;
+}
 
-  .site-branding, .site-logo {
-    display: inline;
-    float: left;
+.custom-logo-link img {
+  width: 85%;
+}
 
-    .site-logo {
-      padding-top: 10px;
-    }
+.site-navigation {
+  display: inline-block;
+  float: right;
+  text-align: right !important;
+  vertical-align: middle;
+  padding-left: 8em !important;
+}
 
-    img {
-      width: 50%;
-      display: inline;
-    }
+.site-branding, .site-logo {
+  display: inline;
+  float: left;
+
+  .site-logo {
+    padding-top: 10px;
   }
+}
 
-  .site-navigation {
-    float: right;
-  }
+#primary-menu, .menu-all-pages-container {
+  display: inline;
+  text-align: right;
+}
 
-  #primary-menu, .menu-all-pages-container {
-    display: inline;
-    text-align: right;
-  }
+
+.site-branding, .site-navigation {
+  display: inline-block;
+}
+
+.site-branding {
+  width: 30%;
+}
+
+.site-navigation {
+  width: 30%;
+
+
+}
+
+.main-navigation {
+  width: auto;
 
   a {
     color: #424242;
@@ -43,22 +65,6 @@
       cursor: pointer;
       padding: 15px;
     }
-
-    .site-branding, .site-navigation {
-      display: inline-block;
-    }
-
-    .site-branding {
-      width: 30%;
-    }
-
-    .site-navigation {
-      width: 30%;
-    }
-  }
-
-  .main-navigation {
-    width: auto;
   }
 }
 

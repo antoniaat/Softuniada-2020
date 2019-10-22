@@ -553,37 +553,56 @@ table {
 }
 
 #masthead.site-header, #primary-menu {
-	padding: 0 4em;
+	padding: 0 2em;
 	display: -ms-inline-flexbox;
 	display: inline-flex;
 	width: 100%;
 	text-align: right;
 }
 
-#masthead.site-header .site-branding, #masthead.site-header .site-logo, #primary-menu .site-branding, #primary-menu .site-logo {
+.custom-logo-link img {
+	width: 85%;
+}
+
+.site-navigation {
+	display: inline-block;
+	float: right;
+	text-align: right !important;
+	vertical-align: middle;
+	padding-left: 8em !important;
+}
+
+.site-branding, .site-logo {
 	display: inline;
 	float: left;
 }
 
-#masthead.site-header .site-branding .site-logo, #masthead.site-header .site-logo .site-logo, #primary-menu .site-branding .site-logo, #primary-menu .site-logo .site-logo {
+.site-branding .site-logo, .site-logo .site-logo {
 	padding-top: 10px;
 }
 
-#masthead.site-header .site-branding img, #masthead.site-header .site-logo img, #primary-menu .site-branding img, #primary-menu .site-logo img {
-	width: 50%;
-	display: inline;
-}
-
-#masthead.site-header .site-navigation, #primary-menu .site-navigation {
-	float: right;
-}
-
-#masthead.site-header #primary-menu, #masthead.site-header .menu-all-pages-container, #primary-menu #primary-menu, #primary-menu .menu-all-pages-container {
+#primary-menu, .menu-all-pages-container {
 	display: inline;
 	text-align: right;
 }
 
-#masthead.site-header a, #primary-menu a {
+.site-branding, .site-navigation {
+	display: inline-block;
+}
+
+.site-branding {
+	width: 30%;
+}
+
+.site-navigation {
+	width: 30%;
+}
+
+.main-navigation {
+	width: auto;
+}
+
+.main-navigation a {
 	color: #424242;
 	text-decoration: none;
 	font-family: "Lato", sans-serif;
@@ -594,27 +613,11 @@ table {
 	margin: 6px 0;
 }
 
-#masthead.site-header a:hover, #primary-menu a:hover {
+.main-navigation a:hover {
 	color: white;
 	background: #4480A7;
 	cursor: pointer;
 	padding: 15px;
-}
-
-#masthead.site-header a .site-branding, #masthead.site-header a .site-navigation, #primary-menu a .site-branding, #primary-menu a .site-navigation {
-	display: inline-block;
-}
-
-#masthead.site-header a .site-branding, #primary-menu a .site-branding {
-	width: 30%;
-}
-
-#masthead.site-header a .site-navigation, #primary-menu a .site-navigation {
-	width: 30%;
-}
-
-#masthead.site-header .main-navigation, #primary-menu .main-navigation {
-	width: auto;
 }
 
 #site-navigation {
