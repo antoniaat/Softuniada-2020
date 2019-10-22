@@ -624,9 +624,11 @@ table {
 
 .ub-countdown div {
 	display: inline-block;
-	width: 13%;
+	width: 10%;
 	text-align: left;
 	margin-right: 1em;
+	color: #306085;
+	font-weight: bolder;
 }
 
 .ub-countdown div.timer-container div:nth-child(2) {
@@ -638,13 +640,20 @@ table {
 
 .ub-countdown .ub_countdown_week, .ub-countdown .ub_countdown_day, .ub-countdown .ub_countdown_hour, .ub-countdown .ub_countdown_minute, .ub-countdown .ub_countdown_second {
 	display: block;
-	background: #cecbcb;
+	background: #FFFFFF;
+	border: 1px solid #FFA200;
+	box-sizing: border-box;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 0px 2px rgba(0, 0, 0, 0.14);
 	border-radius: 12px;
 	padding: 21px;
 	width: 100%;
 	text-align: center;
 	font-weight: bold;
 	font-size: 35px;
+}
+
+.ytp-large-play-button.ytp-button {
+	background: orange;
 }
 
 /*--------------------------------------------------------------
