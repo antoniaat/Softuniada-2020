@@ -625,6 +625,21 @@ table {
 	float: right;
 }
 
+@media screen and (max-width: 900px) {
+	.site-branding, .site-navigation {
+		display: none;
+	}
+	.nav-menu li {
+		display: block;
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+	.site-header {
+		padding: 0;
+	}
+}
+
 .ub-countdown div {
 	display: inline-block;
 	width: 10%;

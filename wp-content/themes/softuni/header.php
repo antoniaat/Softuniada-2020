@@ -26,9 +26,6 @@
 
 	<header id="masthead" class="site-header">
 		<div class="site-branding">
-<!--            <div class="site-logo">-->
-<!--                <img src="https://about.softuni.bg/Content/images/svg-logos/softuni-logo-white.svg"/>-->
-<!--            </div>-->
             <?php
 			the_custom_logo();
 			$softuni_description = get_bloginfo( 'description', 'display' );

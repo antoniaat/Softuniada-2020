@@ -42,8 +42,6 @@
 
 .site-navigation {
   width: 30%;
-
-
 }
 
 .main-navigation {
@@ -71,4 +69,22 @@
 #site-navigation {
   display: inline;
   float: right;
+}
+
+@media screen and (max-width: 900px) {
+  .site-branding, .site-navigation {
+    display: none;
+  }
+  .nav-menu {
+    li {
+      display: block;
+      float: none;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .site-header {
+    padding: 0;
+  }
 }
