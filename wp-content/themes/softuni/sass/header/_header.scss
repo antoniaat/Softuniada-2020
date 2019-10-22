@@ -1,11 +1,8 @@
-#masthead.site-header {
-  background: #333333;
-  color: white;
+#masthead.site-header, #primary-menu {
   padding: 0 4em;
   display: inline-flex;
   width: 100%;
-  position: relative;
-  top: -22px;
+  text-align: right;
 
   .site-branding, .site-logo {
     display: inline;
@@ -21,34 +18,40 @@
     }
   }
 
-  #primary-menu,.menu-all-pages-container {
+  .site-navigation {
+    float: right;
+  }
+
+  #primary-menu, .menu-all-pages-container {
     display: inline;
     text-align: right;
   }
 
   a {
-    color: white;
+    color: #424242;
     text-decoration: none;
     font-family: $font__main;
     padding: 15px;
     font-size: 16px;
-    border-radius:10px;
+    border-radius: 10px;
     font-weight: bold;
     margin: 6px 0;
 
     &:hover {
-      background: #555555;
+      color: white;
+      background: #4480A7;
       cursor: pointer;
       padding: 15px;
     }
 
     .site-branding, .site-navigation {
-      display:inline-block;
+      display: inline-block;
     }
 
     .site-branding {
       width: 30%;
     }
+
     .site-navigation {
       width: 30%;
     }
