@@ -784,6 +784,32 @@ table {
 	color: #FFA200 !important;
 }
 
+.site-footer {
+	background: #234465;
+	color: white;
+	padding: 1em;
+}
+
+.site-footer div {
+	display: inline-block;
+}
+
+.site-footer div.left-side {
+	text-align: left;
+	width: 45%;
+}
+
+.site-footer div.right-side {
+	text-align: right;
+	width: 45%;
+}
+
+.site-footer a {
+	color: white !important;
+	text-decoration: none;
+	padding: 0 1em;
+}
+
 .program-date-label {
 	background: #234465;
 	border-radius: 10px;

@@ -14,7 +14,6 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
             <div class="left-side">
                 <p>© 2013-2020 - Software University. All Rights Reserved. </p>
             </div>
@@ -24,7 +23,6 @@
                 <a href="https://softuniada.softuni.bg/archive/">Архив</a>
             </div>
 
-		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
