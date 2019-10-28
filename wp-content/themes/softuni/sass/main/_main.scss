@@ -109,6 +109,29 @@
   border-bottom: 1px solid white;
 }
 
+.lecturer-box {
+  background: #E0E0E0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 2px 2px rgba(0, 0, 0, 0.12), 0 0 2px rgba(0, 0, 0, 0.14);
+  border-radius: 12px;
+
+  .rounded-img  {
+    figure {
+      margin: 0;
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.secondary-btn button{
+  background: transparent !important;
+  border: 1px solid $color__link-hover !important;
+  color: $color__link-hover !important;
+}
+
 .program-date-label {
   background: #234465;
   border-radius: 10px;

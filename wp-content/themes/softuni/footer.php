@@ -15,17 +15,15 @@
 
 	<footer id="colophon" class="site-footer">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'softuni' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'softuni' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'softuni' ), 'softuni', '<a href="http://antoniaat.com">Antonia Atanasova</a>' );
-				?>
+            <div class="left-side">
+                <p>© 2013-2020 - Software University. All Rights Reserved. </p>
+            </div>
+            <div class="right-side">
+                <a href="https://softuniada.softuni.bg/softuniada-2019/">Софтуниада – 2019</a>
+                <a href="https://softuni.bg/">СофтУни</a>
+                <a href="https://softuniada.softuni.bg/archive/">Архив</a>
+            </div>
+
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
