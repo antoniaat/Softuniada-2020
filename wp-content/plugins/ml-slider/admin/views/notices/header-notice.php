@@ -8,7 +8,7 @@
 		<div class="updraft_advert_content_right">
 			<h3 class="updraft_advert_heading"><?php echo $title; ?></h3>
             <div class="updraft-advert-dismiss">
-                <a href="#" onclick="jQuery('.updraft-ad-container').slideUp(); jQuery.post(ajaxurl, {action: 'notice_handler', ad_identifier: '<?php echo $dismiss_time;?>', _wpnonce: metaslider_notices.handle_notices_nonce });"><?php echo sprintf('%s', __('Dismiss', 'ml-slider')); echo ('' !== $hide_time) ? sprintf(' (%s)', $hide_time) : ''; ?></a>
+                <a class="underline text-blue-dark" href="#" onclick="jQuery('.updraft-ad-container').slideUp(); jQuery.post(ajaxurl, {action: 'notice_handler', ad_identifier: '<?php echo $dismiss_time;?>', _wpnonce: metaslider_notices.handle_notices_nonce });"><?php echo sprintf('%s', __('Dismiss', 'ml-slider')); echo ('' !== $hide_time) ? sprintf(' (%s)', $hide_time) : ''; ?></a>
             </div>
 			<p>
 				<?php 

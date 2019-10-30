@@ -473,19 +473,19 @@ msgstr ""
 msgid "You do not have access to this resource."
 msgstr ""
 
-#: src/admin/routes/api.php:242
+#: src/admin/routes/api.php:249
 msgid "The request format was not valid."
 msgstr ""
 
-#: src/admin/routes/api.php:250, src/admin/routes/api.php:306
+#: src/admin/routes/api.php:257, src/admin/routes/api.php:313
 msgid "This slideshow is no longer available."
 msgstr ""
 
-#: src/admin/routes/api.php:313
+#: src/admin/routes/api.php:320
 msgid "This was not a slideshow, so we cannot delete it."
 msgstr ""
 
-#: src/admin/routes/api.php:396
+#: src/admin/routes/api.php:403
 msgid "This was not a slideshow, so we cannot update the setting."
 msgstr ""
 

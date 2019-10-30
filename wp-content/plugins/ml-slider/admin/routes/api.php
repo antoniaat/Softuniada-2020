@@ -153,12 +153,19 @@ class MetaSlider_Api {
 		if (isset($slideshow['slides'])) {
 			foreach ($slideshow['slides'] as $order => $slide_id) {
 
-				$slideshow['slides'][$order] = array(
-					'id' => $slide_id,
-					'thumbnail' => get_the_post_thumbnail_url($slide_id, 'thumbnail'),
-					'order' => $order
-				);
+				$thumbnail_id = 'attachment' === get_post_type($slide_id) ? $slide_id : get_post_thumbnail_id($slide_id);
+				$thumbnail_data = wp_get_attachment_image_src($thumbnail_id);
+
+				unset($slideshow['slides'][$order]);
+				if (isset($thumbnail_data['0'])) {
+					$slideshow['slides'][$order] = array(
+						'id' => $slide_id,
+						'thumbnail' => $thumbnail_data['0'],
+						'order' => $order
+					);
+				}
 			}
+			$slideshow['slides'] = array_values($slideshow['slides']);
 		}
 	
 		return $slideshow;

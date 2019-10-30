@@ -563,7 +563,7 @@ class MetaSlider_Notices extends Updraft_Notices_1_0 {
 		);
 		$message = isset($messages[$type]) ? $messages[$type] : __('Read more', 'ml-slider');
 
-		return '<a class="updraft_notice_link" href="' . $this->get_notice_url($link) . '">' . $message . '</a>';
+		return '<a class="updraft_notice_link underline text-blue-dark" href="' . $this->get_notice_url($link) . '">' . $message . '</a>';
 	}
 
 	/**
