@@ -1,24 +1,29 @@
 #masthead.site-header, #primary-menu {
-  display: inline-flex;
-  width: 100%;
-  text-align: right;
-}
-
-.custom-logo-link img {
-  width: 85%;
-}
-
-.site-navigation {
   display: inline-block;
-  float: right;
-  text-align: right !important;
   vertical-align: middle;
-  padding-left: 8em !important;
+  width: 100%;
+  padding: 1em;
+  text-align: center;
+
+  .site-branding {
+    width: 15%;
+    float: left;
+  }
+
+  .main-navigation {
+    width: 60%;
+    display: inline;
+    text-align: right;
+
+    .menu-primary-menu-container {
+      text-align: right;
+      float: right;
+    }
+  }
 }
 
 .site-branding, .site-logo {
   display: inline;
-  float: left;
 
   .site-logo {
     padding-top: 10px;
@@ -30,21 +35,7 @@
   text-align: right;
 }
 
-.site-branding, .site-navigation {
-  display: inline-block;
-}
-
-.site-branding {
-  width: 30%;
-}
-
-.site-navigation {
-  width: 30%;
-}
-
 .main-navigation {
-  width: auto;
-
   a {
     color: #424242;
     text-decoration: none;
@@ -64,19 +55,22 @@
   }
 }
 
-#site-navigation {
-  display: inline;
-  float: right;
-}
-
-.kt-row-layout-inner {
-  padding: 0 3em;
-}
-
 @media screen and (max-width: 900px) {
-  .site-branding, .site-navigation {
-    display: none;
+  .site-header {
+    padding-bottom: 0 !important;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.14);
   }
+
+  #masthead.site-header .site-branding {
+    width: 64%;
+    float: left;
+  }
+
+  .box-shadow-menu {
+    top: .7em;
+    left: 3em;
+  }
+
   .nav-menu {
     li {
       display: block;
@@ -84,9 +78,5 @@
       width: 100%;
       text-align: center;
     }
-  }
-
-  .site-header {
-    padding: 0;
   }
 }

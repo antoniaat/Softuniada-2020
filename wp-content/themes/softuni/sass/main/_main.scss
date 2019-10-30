@@ -225,13 +225,34 @@
   margin: 4px !important;
 }
 
+.box-shadow-menu {
+  position: relative;
+  padding-left: 1.25em;
+  background: transparent;
+  border: none;
+  font-size: 28px;
+}
+
+.box-shadow-menu:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.25em;
+  width: 1em;
+  height: 0.15em;
+  background: black;
+  box-shadow:
+          0 0.25em 0 0 black,
+          0 0.5em 0 0 black;
+}
+
 @media screen and (max-width: 900px) {
   .ub-countdown {
     text-align: center;
   }
 
   .ub-countdown div {
-    width: 82px;
+    width: 60px;
     margin-right: .4em;
   }
 
@@ -242,6 +263,7 @@
   }
 
   .ub-countdown div.timer-container div:nth-child(2) {
-    font-size: 15px;
+    font-size: 11px;
+    font-weight: normal;
   }
 }

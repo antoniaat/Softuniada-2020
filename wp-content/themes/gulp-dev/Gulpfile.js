@@ -56,7 +56,7 @@ gulp.task('javascript', function() {
 // Watch everything
 gulp.task('watch', function() {
 	browserSync.init({
-		proxy: 'http://localhost/softuniada/',
+		proxy: 'http://localhost/Softuniada-2020/',
 		port: 3000,
 	});
 	gulp.watch([root + '**/*.css', root + '**/*.scss' ], ['css']);
