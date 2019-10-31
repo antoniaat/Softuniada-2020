@@ -22,9 +22,9 @@
  */
 class Ultimate_Blocks_Constants {
 
-	const PLUGIN_VERSION = '2.1.5';
+	const PLUGIN_VERSION = '9999999';
 
-	const PLUGIN_NAME = 'ultimate-blocks';
+	const PLUGIN_NAME = 'softuni-blocks';
 
 	/**
 	 * Get Plugin version
