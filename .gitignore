@@ -83,3 +83,4 @@ fabric.properties
 *.xml
 .idea/workspace.xml
 *.iml
+wp-content/themes/softuni-theme.zip
