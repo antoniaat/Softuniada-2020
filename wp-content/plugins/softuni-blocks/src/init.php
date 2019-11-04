@@ -35,7 +35,6 @@ function ub_check_is_gutenberg_page() {
 	}
 	
     return false;
-
 }
 
 /**

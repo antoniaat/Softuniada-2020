@@ -387,8 +387,8 @@ optgroup,
 textarea {
 	color: #424242;
 	font-family: "Lato", sans-serif;
-	font-size: 18px;
-	font-size: 1.125rem;
+	font-size: 12px;
+	font-size: 0.75rem;
 	line-height: 1.5;
 }
 
@@ -399,8 +399,8 @@ textarea {
 	select,
 	optgroup,
 	textarea {
-		font-size: 20px;
-		font-size: 1.25rem;
+		font-size: 12px;
+		font-size: 0.75rem;
 	}
 }
 
@@ -412,50 +412,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-	font-size: 3em;
-}
-
-h2 {
-	font-size: 2.6em;
-}
-
-h3 {
-	font-size: 2.2em;
-}
-
-h4 {
 	font-size: 2em;
 }
 
-h5 {
+h2 {
 	font-size: 1.8em;
 }
 
-h6 {
+h3 {
 	font-size: 1.6em;
 }
 
-@media screen and (max-width: 900px) {
-	h1 {
-		font-size: 2em;
-		text-align: center;
-	}
-	h2 {
-		font-size: 1.8em;
-		text-align: center;
-	}
-	h3 {
-		font-size: 1.2em;
-	}
-	h4 {
-		font-size: 1em;
-	}
-	h5 {
-		font-size: .8em;
-	}
-	h6 {
-		font-size: .6em;
-	}
+h4 {
+	font-size: 1.4em;
+}
+
+h5 {
+	font-size: 1.2em;
+}
+
+h6 {
+	font-size: 1em;
 }
 
 p {
